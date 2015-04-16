@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+
+logs = File.read(ARGV[0])
+pwd = File.dirname(__FILE__)
+template = File.read(File.join(pwd, 'index-template.html'))
+parts = template.split('<!-- LOGS_PLACEHOLDER -->')
+
+new_contents = [parts[0], logs, parts[1]].join()
+
+generated_filename = File.join(pwd, 'generated', "index.html")
+File.write(generated_filename, new_contents)
+
+puts generated_filename
