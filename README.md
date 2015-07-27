@@ -1,10 +1,9 @@
-# Mithril CI Offline
+# Mach CI Offline
 
-The offline version of [mithril-ci](https://github.com/yggie/mithril-ci), as
-long as you have a modern browser, it should just work! It simply contains the
-latest offline ready distribution from
-[mithril-ci](https://github.com/yggie/mithril-ci) to be used with
-[mithril](https://github.com/yggie/mithril) for active development.
+The offline version of [mach-ci](https://github.com/yggie/mach-ci), as long as
+you have a modern browser, it should just work! It simply contains the latest
+offline ready distribution from [mach-ci](https://github.com/yggie/mach-ci) to
+be used with [mach](https://github.com/yggie/mach) for active development.
 
 
 ## Usage
