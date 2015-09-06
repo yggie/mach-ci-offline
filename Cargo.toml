@@ -1,0 +1,9 @@
+[package]
+name = "mach-debugger-build"
+version = "0.0.0"
+authors = ["Bryan Yap <bryan.yap.mh@gmail.com>"]
+
+[dependencies]
+iron = "*"
+mount = "*"
+staticfile = "*"

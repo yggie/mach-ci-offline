@@ -1,33 +1,26 @@
-# Mach CI Offline
+# Mach Test Browser (Standalone version)
 
-The offline version of [mach-ci](https://github.com/yggie/mach-ci), as long as
-you have a modern browser, it should just work! It simply contains the latest
-offline ready distribution from [mach-ci](https://github.com/yggie/mach-ci) to
-be used with [mach](https://github.com/yggie/mach) for active development.
+The standalone version of
+[mach-test-browser](https://github.com/yggie/mach-test-browser), as long as you
+have a modern browser, it should just work! It simply contains the latest
+distribution from
+[mach-test-browser](https://github.com/yggie/mach-test-browser) to be used with
+[mach](https://github.com/yggie/mach) for active development.
 
 
 ## Usage
 
-The repository provides a simple script to generate an offline compatible
-version of the CI, simply run:
+To start the standalone server, just run:
 
 ```
-./generate_index.rb path/to/sample.logs
+cargo run
 ```
 
-This will generate a compiled html file in the `generated/` directory, the file
-name will be returned from the script. This makes it easy to do something like:
-
-```
-./generate_index.rb path/to/sample.logs | xargs open
-```
-
-Which will open the generated file in a browser.
+This will start the app server on http://localhost:8888. By default, it will
+search for a file called `default.log` in the `public/` directory.
 
 ## TODOs
 
-* Truly offline – A few dependencies for the application are served over a CDN,
-  for it to be truly offline, this should be included statically.
 * Allow option for generating unique files – At present all generated files
   have the same filename, which means previous contents will be replaced. We
   might want to keep it in the future.
@@ -36,4 +29,4 @@ Which will open the generated file in a browser.
 
 ## License
 
-The software is distributed under the MIT License.
+The software is distributed under the [MIT License](/LICENSE).

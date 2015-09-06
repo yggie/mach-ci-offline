@@ -1,1 +1,4 @@
-generated/
+/target/
+/Cargo.lock
+
+/public/**/*.log
